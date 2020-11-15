@@ -11,7 +11,7 @@
    {% if latest_comments_list %}
       {% for c in latest_comments_list %}
       <p class="comment">
-          <strong>{{c.author_name}}</strong>
+          <strong>{{c.author_name}}</strong>&nbsp<em>{{c.comm_date}}</em>
           <p class="text_comment">{{c.comment_text}}</p>
       </p>
       {% endfor%}
@@ -22,9 +22,8 @@
 <hr>
 <form action="{% url 'articles:leave_comment' article.id %}" method="POST">
       {% csrf_token %}
-
-      <input class="name" type="text" required placeholder="Ваше имя" name ="name"> <br>
-      <textarea  class="form" name="text" cols="186"  required=""  placeholder="Текст комментария" rows="5"></textarea><br>
+      <input type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Ваше имя" name ="name"> <br>
+      <textarea  class="form-control"  name="text" cols="145"  required=""  placeholder="Текст комментария" rows="5" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea><br>
       <button  class="btn btn-outline-primary" type="submit">Отправить</button>
 
 </form>

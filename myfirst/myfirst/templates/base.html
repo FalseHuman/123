@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}Мой сайт{% endblock %}</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
-    <style type="text/css">
+   <style type="text/css">
 @font-face {
   src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Book.woff);
   font-family: 'Suisse';
@@ -30,9 +32,9 @@ html {
 }
 
 body {
-  background-color:  #f9f9f9;;
+  background-color:  white;
   color: black;
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   font-size: 100%;
@@ -43,12 +45,12 @@ body {
   max-height: 100vh;
  
 }
- 
+
 .footer{
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: white;
   border-top: .05rem solid #e5e5e5;
   margin-top: 10px;
     
@@ -58,10 +60,6 @@ body {
   }
 .form {
   margin-top: 8px;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 15px;
-
-  
   }
   .name {
 font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -74,7 +72,6 @@ font-size: 15px;
     font-size: 25px;
 }
 .h3{
-    margin-top: 30%;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     
 }
@@ -102,6 +99,10 @@ font-size: 15px;
 .text_comment {
   margin-top: -13px;
 }
+.names_logo{
+  text-align: center;
+  
+}
 
 
     </style>
@@ -123,12 +124,21 @@ font-size: 15px;
       </div>
     </div>
   </header>
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="names_logo">
+      <a class="p-2 text-muted" href="http://127.0.0.1:8000/">Главная</a>
+      <a class="p-2 text-muted" href="http://127.0.0.1:8000/articles/">Список статей</a>
+      <a class="p-2 text-muted" href="#">FAQ</a>
+    </nav>
+  </div>
       {% block content %}{% endblock %}
 <footer class="footer">
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>Дизайн блога взят из <a href="https://getbootstrap.com/">Bootstrap</a> от <a href="https://twitter.com/mdo">@mdo</a>.</p>
   <p>
     <a href="#">Наверх</a>
   </p></footer>
 <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+<div class="p-4">
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Последние статьи{% endblock %}
 {% block content %}
-<h2 class="head">Статьи блога:</h2>
+
     {% if latest_articles_list %}
         {% for a in latest_articles_list %}
         <li><a class="article"color="black" href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a></li><br>
@@ -9,5 +9,5 @@
     {% else %}
         Статьи не найдены :(
     {% endif %}
-<h2 class="h3">Blog-prototype</h2>       
+<h2 class="h3"></h2>       
 {% endblock %}

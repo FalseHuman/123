@@ -1,0 +1,98 @@
+/* static/css/base.css */
+@font-face {
+    src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Book.woff);
+    font-family: 'Suisse';
+    font-weight: normal;
+  }
+  
+  @font-face {
+    src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Bold.woff
+  );
+    font-family: 'Suisse';
+    font-weight: bold;
+   
+  }
+  
+  
+  html {
+    height: 100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    background-color:  white;
+    color: black;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: 'Suisse';
+    box-sizing: border-box;
+    padding-left: 36px;
+    padding-right: 36px;
+    max-height: 100vh;
+   
+  }
+  
+  .footer{
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: white;
+    border-top: .05rem solid #e5e5e5;
+    margin-top: 10px;
+      
+    }
+    .footer-author{
+      margin-bottom: 0;
+    }
+  .form {
+    margin-top: 8px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 15px;
+  
+    
+    }
+    .name {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  }
+  .head {
+      margin-top: 3px;
+      text-align: center;
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      font-size: 25px;
+  }
+  .h3{
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      
+  }
+  .article{
+      color: black;
+  }
+  .comment{
+    font-family: 'Suisse';
+    font-size: 15px;
+  }
+  .blog-header {
+    margin-top: -10px;
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 50px;
+  }
+  
+  .blog-header-logo:hover {
+    text-decoration: none;
+  }
+  .text_comment {
+    margin-top: -13px;
+  }
+  .names_logo{
+    text-align: center;
+    
+  }
